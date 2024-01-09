@@ -1,4 +1,5 @@
 ﻿using Domain.Commands;
+using Domain.ENums;
 using Domain.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -15,14 +16,32 @@ namespace Services.Service
             throw new NotImplementedException();
         }
 
-        public Task PostAsync(VeiculoCommand command)
-
-        {   //Toso
-            //Incluir validaçãp. só podem castrar veículos com
+        public async Task<string> PostAsync(VeiculoCommand command)
+            
+        {  if (command == null)
+                return "Todos os Campos são Obrigatórios";
+                
+            //To do
+            //Incluir validação, só podem cadastrar veículos com
             //até 5 anos de uso
             //To do 
             //Incluir Somente carros do tipo SUV, Sedan  e Hatch 
-            command.
+
+
+            int anoAtual = DateTime.Now.Year;
+            if (anoAtual - command.AnoFabricacao > 5)
+
+                return "O Ano do veículo é menor que o permitido";
+
+            if (command.TipoVeiculo != ETipoVeiculo.suv
+                && command.TipoVeiculo != ETipoVeiculo.picape
+                && command.TipoVeiculo != ETipoVeiculo.sedan
+                )
+                return "O tipo de Veículo não é permitido";
+
+            return _veiculoRepository.PostAsync(command);
+
+
             throw new NotImplementedException();
         }
 

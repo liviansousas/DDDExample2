@@ -71,3 +71,6 @@ C:\Users\DELL\Downloads\DDD-Example-master\DDD-Example-master\Application\obj\De
 C:\Users\DELL\Downloads\DDD-Example-master\DDD-Example-master\Application\obj\Debug\net8.0\Application.pdb
 C:\Users\DELL\Downloads\DDD-Example-master\DDD-Example-master\Application\obj\Debug\net8.0\Application.genruntimeconfig.cache
 C:\Users\DELL\Downloads\DDD-Example-master\DDD-Example-master\Application\obj\Debug\net8.0\ref\Application.dll
+C:\Users\DELL\Downloads\DDD-Example-master\DDD-Example-master\Application\bin\Debug\net8.0\Infraestructure.dll
+C:\Users\DELL\Downloads\DDD-Example-master\DDD-Example-master\Application\bin\Debug\net8.0\Infraestructure.pdb
+C:\Users\DELL\Downloads\DDD-Example-master\DDD-Example-master\Application\obj\Debug\net8.0\Application.sourcelink.json

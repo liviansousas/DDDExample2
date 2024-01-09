@@ -5,16 +5,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Domain.Interfaces
+namespace Domain
 {
-    public interface IVeiculoService
-    {
+    public interface IVeiculoRepository
+    { 
         //A interface é um contrato, apenas usamos para adicionar 
         //metodos,
         //não é feita implementação de nada 
 
-        Task <string> PostAsync(VeiculoCommand command);
+        Task<string> PostAsync(VeiculoCommand command);
         void PostAsync();
-        void GetAsync(); 
+        void GetAsync();
     }
+
 }
